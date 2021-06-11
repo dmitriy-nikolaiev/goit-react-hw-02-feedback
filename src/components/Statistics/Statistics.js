@@ -6,14 +6,14 @@ export class Statistics extends Component {
     const { good, neutral, bad, total, positivePercentage } = this.props;
     return good || neutral || bad ? (
       <div>
-        <p>Good: {good}</p>
-        <p>Neutral: {neutral}</p>
-        <p>Bad: {bad}</p>
-        <p>Total: {total}</p>
-        <p>Positive feedback: {positivePercentage}%</p>
+        <p className="stat-data">Good: {good}</p>
+        <p className="stat-data">Neutral: {neutral}</p>
+        <p className="stat-data">Bad: {bad}</p>
+        <p className="stat-data">Total: {total}</p>
+        <p className="stat-data">Positive feedback: {positivePercentage}%</p>
       </div>
     ) : (
-      <Notification message="No feedback given"></Notification>
+      <Notification message="No feedback given" />
     );
   }
 }

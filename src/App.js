@@ -4,7 +4,7 @@ import { Section } from './components/Section';
 import { FeedbackOptions } from './components/FeedbackOptions';
 import { Statistics } from './components/Statistics';
 
-import './App.css';
+import './App.scss';
 
 class App extends Component {
   state = {
